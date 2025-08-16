@@ -196,7 +196,6 @@ function draw() {
       push();
       boxsize = map(treble, 0, 50, 30, 40); //box size changes according to treble analysis
       for (i = 0; i < 360; i += 90) {
-        background(0); //black background :)
         noFill();
         stroke(255);
         push();
@@ -337,6 +336,8 @@ function draw() {
       rotationMouse = map(mouseX, 0, width, 180 / num, 720 / num); //maps mouse on x-axis, to change rotation angle of galaxy
 
       push();
+      background(0); //black background :)
+
       translate(0, 0);
       rotateX(frameCount * .5); //rotates in x-axis
       rotateY(frameCount * 0.5);//rotates in y-axis
