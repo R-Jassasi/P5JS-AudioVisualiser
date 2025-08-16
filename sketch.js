@@ -56,6 +56,7 @@ function setup() {
   angleMode(DEGREES); // changes angle mode from radians to degrees
   smooth(10); // enebles anti-aliasing to improve edges quality in 3D
   fft = new p5.FFT(); //creates a new Fast Fourier Transform which analyse audio frequencies
+  background(0); //black background :)
 
   setupButtons();
 
