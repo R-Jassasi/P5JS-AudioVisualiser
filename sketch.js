@@ -176,12 +176,11 @@ function draw() {
   switch (key) { //switch key method calls what's inside each case when it's used, here we use keyboard keys 
     case "1": // when key 1 is clicked
       clear(); //clears canvas to prevent overlaping
-      background(0);
-
       //arces inside
       push(); // push pop seperates the function of the code within from affecting other elements
       rotate(circAngle); //sets rotation to be defined by circAngle
       circAngle = map(treble, 0, 255, -100, 100); //circAngle get it's value from mapping treble, so the value changes accordingly
+      background(0);
       noFill();
       stroke(255);
       strokeWeight(1); // stroke weight :)
