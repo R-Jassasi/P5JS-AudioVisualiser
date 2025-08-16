@@ -196,6 +196,7 @@ function draw() {
       push();
       boxsize = map(treble, 0, 50, 30, 40); //box size changes according to treble analysis
       for (i = 0; i < 360; i += 90) {
+        background(0); //black background :)
         noFill();
         stroke(255);
         push();
